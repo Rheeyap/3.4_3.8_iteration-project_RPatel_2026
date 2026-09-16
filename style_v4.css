@@ -1,13 +1,14 @@
 /* CSS files add styling rules to your content*/
 
 /*google fonts link below to importamd use my fonts*/
-
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 /*here is the css to my style my main heading*/
 
 h1{
-	font-family: 
+	font-family: "Red Hat Display", sans-serif;
 	font-style: normal;
 	letter-spacing:5px;
 	line-height:normal;
@@ -16,18 +17,18 @@ h1{
 	font-size:30px;
 }
 h2{
-	font-family:
+	font-family: "Red Hat Display", sans-serif;
 	padding-left:15px;
 }   
 
 p{
-	font-family: 
+	font-family: "Quicksand", sans-serif;
 	font-size:17px;
 	padding-left:18px;
 }
 
 h4{
-	font-family:  
+	font-family: "Quicksand", sans-serif;   
 	font-size:13px;
 	padding-left:18px;
 	color:#FFFFFF;
@@ -42,19 +43,16 @@ h4{
 }     
 
 .header{
-	box-sizing: border-box;
-	background-color:#DBAFC1;
+	background-color:#09018B;
 	grid-column-start: 1;
 	grid-column-end: span 3;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
+	height: 120px;
 	overflow: hidden;
+	position: relative;
 }
 
 .nav{
-	background-color:#DBAFC1;
+	background-color:#09018B;
 	grid-column-start:1;
 	grid-column-end:4; 
 	
@@ -261,7 +259,7 @@ nav a:link, nav a:active, nav a:visited{
 }
 
 .footer{
-	background-color:#DBAFC1;
+	background-color:#09018B;
 	grid-column-start: 1;
 	grid-column-end: span 3;	
 	display: flex;
@@ -269,14 +267,20 @@ nav a:link, nav a:active, nav a:visited{
 }
 
 
+/* header banner image - fills the full width of the header bar */
+
 .header-banner{
-	max-width: 1600px;
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-	margin: 0 auto;
 	display: block;
+	width: 100%;
+	height: 120px;
+	object-fit: cover;
+	object-position: center;
 }
+
+
+
+
+
 
 @media (max-width: 700px){
 	.hero-photo{ height: 220px; }
